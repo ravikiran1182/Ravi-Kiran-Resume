@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Playfair Display", serif;
+    background: linear-gradient(135deg,#F6F1FF,#EEF4FF,#FFF1F6);
+    color: #2E2A3A;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+/* ICONS */
+img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+/* MAIN GRID */
+#mainWhole {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* better than 50% */
+    gap: 20px;
+    padding: 10px;
+}
+
+/* REMOVE HARD MARGINS */
+#mainL, #mainR {
+    margin: 0;
+}
+
+/* SECTION */
+section {
+    margin-top: 15px;
+}
+
+/* TEXT */
+h3 {
+    margin: 0;
+    color: #5B2EFF;
+}
+
+h4 {
+    margin: 8px 0 0 5px;
+    color: #FF4D8D;
+}
+
+p {
+    margin: 5px;
+    color: #4A4663;
+    text-align: justify;
+}
+
+/* EDUCATION ALIGN */
+#mainED {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* LIST */
+ul {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 4px;
+    color: #4A4663;
+}
+
+/* STRONG */
+strong {
+    color: #FF4D8D;
+    font-weight: 600;
+}
+
+/*  RESPONSIVENESS */
+@media (max-width: 768px) {
+    #mainWhole {
+        grid-template-columns: 1fr; /* stack vertically */
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    img {
+        width: 18px;
+        height: 18px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    #mainWhole {
+        padding: 5px;
+    }
+}
